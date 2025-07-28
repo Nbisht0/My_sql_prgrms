@@ -1,0 +1,19 @@
+ USE bank_db;
+
+CREATE TABLE employees(
+emp_id INT PRIMARY KEY auto_increment,
+name VARCHAR(50) NOT NULL ,
+dept VARCHAR(50) NOT NULL,
+desig VARCHAR(50) NOT NULL DEFAULT 'Probation'
+);
+
+INSERT INTO employees(emp_id , name , dept , desig)
+VALUES (101 , 'Anjana' , 'DEPOSIT' , 'ASSOCIATED'),
+ (102 , 'Deepika' , 'cash' , 'CASHIER'),
+  (103 , 'Soniya' , 'LOAN ' , 'ASSOCIATED'),
+   (104 , 'ANJALI' , 'LOAN' , 'MANAGER'),
+    (105 , 'vanshika' , 'DEPOSIT' , 'ASSOCIATED');
+    
+    SELECT * FROM employees;
+    SELECT emp_id , name FROM employees;
+    
